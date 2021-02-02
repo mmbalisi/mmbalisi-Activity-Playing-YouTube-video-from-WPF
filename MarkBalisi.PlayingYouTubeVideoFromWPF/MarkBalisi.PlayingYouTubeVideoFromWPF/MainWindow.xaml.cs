@@ -24,5 +24,10 @@ namespace MarkBalisi.PlayingYouTubeVideoFromWPF
         {
             InitializeComponent();
         }
+
+        private void btnGo_Click(object sender, RoutedEventArgs e)
+        {
+            this.Browser.Navigate(txtVideoUrl.Text);
+        }
     }
 }
